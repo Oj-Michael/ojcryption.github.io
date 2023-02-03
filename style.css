@@ -1,0 +1,101 @@
+
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 90vh;
+   
+}
+h1{
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(10deg, lightblue, #4ec3d3,  #a5f59e , #4ec3d3, #7edcf8);
+    background-size: 150%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: flow 7s linear infinite alternate;
+}
+@keyframes flow {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+main {
+   padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+}
+div{
+    padding: 7px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #222; 
+}
+textarea {
+    background: #555;
+    border-radius: 5px;
+    display: block;
+    margin: 0.5em;
+    color: #fff;
+    font-size: large;
+    padding-left: 5px;
+    border: 0;
+    outline: 0;
+} textarea::placeholder{
+    color: #fff;
+    font-size: large;
+}
+textarea:focus{
+    box-shadow: 0 0 0 1px #fff;
+}
+.btn{
+    font-weight: 600;
+    outline: transparent;
+    border: 0;
+    border-radius: 5px;
+    padding: 7px 10px;
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    background-image: linear-gradient(25deg, #013a4dd8, #93e5f1, #0123469d);
+    color: #000;
+   
+}
+.btnn {
+    font-weight: 600;
+    outline: transparent;
+    border: 0;
+    border-radius: 5px;
+    padding: 7px 10px;
+    display: block;
+    width: 100px;
+    background-image: linear-gradient(25deg, #018fc2d2, #0f4750d7);
+    color: #ddd;
+}
+footer{
+    border-radius: 5px 15px 4px 15px;
+    box-shadow: 0 0 5px #8887;
+    width: fit-content;
+    padding: 1em;
+    background-color: #111;
+    color: #ddd;
+    font-size: 0.91em;
+    text-align: center;
+    font-family: sans-serif;
+  margin: 6em auto 0; 
+
+}
