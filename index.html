@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJCRYPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=PT+Sans+Narrow&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="home">
+            <nav>
+                <div>
+                    <a href="https://mikkyoj.github.io/"> <img src="images/logo-blue.png" alt="logo"> </a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#home" class="home"><span class="a-left">
+                                    < </span>home<span class="a-right"> > </span></a></li>
+                        <li><a href="#about"><span class="a-left">
+                                    < </span>about<span class="a-right"> > </span></a></li>
+                        <li><a href="#oj"><span class="a-left">
+                                    < </span>encrypt<span class="a-right"> > </span></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="content-text">
+                    <h3>Welcome to: </h3>
+                    <h1>THE <br><span>OJCRYPTION</span><br> ALGORITHM</h1>
+                    <P>The online text encryption and decryption tool</P>
+                </div>
+                <div class="content-img">
+                    <!-- hero image -->
+                    <img src="images/keybg.png" alt="hero-bg">
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div id="about">
+            <h2><span> # </span> About</h2>
+            <div class="grid">
+                <!-- col-1 row-1 -->
+                <div class="col-1 right">
+                    <!-- info -->
+                    <h4><span> ? </span> Algorithm 1</h4>
+                    <p>This algorithm is inspired by the Julius Ceaser algorithm. It shifts each alphabeth by backwards by 3. The characters in each text is then compared to new table and have a -3 index. An example of the encryption is seen on the image.</p>
+                </div>
+                <!-- col-2 row-1 -->
+                <div>
+                    <!-- grid image -->
+                    <div class="grid-img col-1">
+                        <h3>Ebiil~Tloia</h3>
+                        <img src="images/algo-key.jpeg">
+                    </div>
+                </div>
+                <!-- col-1 row-2 -->
+                <div class="col-2">
+                    <!-- info -->
+                    <h4><span> ? </span> Algorithm 2</h4>
+                    <p>This algorithm is a self-inspired one. It is more secured by than Algorithm 1 since the encrypted text has more characters. It encrypts vowels as numbers and adds "a" to the end of consonants. An example of the encryption is seen on the image.</p>
+                </div>
+                <!-- col-2 row-2 -->
+                <div class="row-2">
+                    <!-- grid image -->
+                    <div class="grid-img">
+                        <h3>Ha2lala4VWa4ralada</h3>
+                        <img src="images/bg.webp">
+                    </div>
+                </div>
+                <!-- col-1 row-3 -->
+                <div class="col-1 right">
+                    <!-- info -->
+                    <h4><span> ? </span> Algorithm 3</h4>
+                    <p>This algorithm is the combination of both Algorithm 1 and 2. It is inspired by the AES and is the most secured and of the three Algorithms. It converts each character in the text to a 9-bit long character. An example of the encryption is seen on the image</p>
+                </div>
+                <!-- col-2 row-3 -->
+                <div>
+                    <!-- grid image -->
+                    <div class="grid-img col-1">
+                        <h3>tqD5HycV2c&D*eU501agpllfdoH........</h3>
+                        <img src="images/algo-3.jpeg">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+
+            <div id="oj">
+                <!-- encryption -->
+                <div id="encryption" class="secs active">
+                    <div class="e-info">
+                        <h3><span> # </span> Encryption</h3>
+                        <p>Encryption is the process of encoding information. This process converts the original representation of the information, known as plaintext, into an alternative form known as ciphertext</p>
+                        <p>When you use this encryption tool to send messages, all information, including your text and any files or media, are encrypted as the data travels between devices. This ensures there is complete security and your information are untraceable.</p>
+
+                        <span class="links" data-id="decryption" onclick="openTab('decryption')">Decrypt Here</span>
+                    </div>
+                    <div class="e-input">
+                        <textarea id="text" cols="30" rows="4" placeholder="ENTER TEXT TO ENCRYPT HERE!!"></textarea>
+                        <textarea id="message" cols="30" rows="6" readonly></textarea>
+                        <div class="button-container">
+                            <button class="btn" onclick="encryption()">Encrypt</button>
+                            <!-- The button used to copy the text -->
+                            <button onclick="myFunction()" class="btnn">Copy Enc</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- decryption -->
+                <div id="decryption" class="secs">
+                    <div class="e-info">
+                        <h3><span> # </span> Decryption</h3>
+                        <p>Decryption is the process of converting an encrypted message back to its original (readable) format by using a secret key or a clever technique. Code cracking is a form of decryption. it means uncovering the original data without knowing the secret, by using a variety of clever techniques.</p>
+                        <p>Decryption can also be used to recover lost data. If you have lost important information that was encrypted, you can use decryption tools to recover the data.</p>
+
+                        <span class="links" data-id="encryption" onclick="openTab('encryption')">Encrypt Here</span>
+                    </div>
+                    <div class="e-input">
+                        <textarea id="text2" cols="30" rows="4" placeholder="ENTER TEXT TO DECRYPT HERE!!"></textarea>
+                        <textarea id="message2" cols="30" rows="6" readonly></textarea>
+                        <div class="button-container">
+                            <button class="btn" onclick="decryption()">Decrypt</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;: Michael Oj. 2023</p>
+    </footer>
+</body>
+
+</html>
