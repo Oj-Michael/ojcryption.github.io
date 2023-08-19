@@ -234,7 +234,7 @@ function algorithm2(str) {
             encrypted += array[i];
         }
         else if (array[i] == " ") {
-            array[i] = "V";
+            array[i] = "{";
             encrypted += array[i];
         }
         else if (array[i] == "1") {
@@ -347,7 +347,7 @@ function decryptAlgorithm2(str) {
             narray[0] = "5";
             decrypted += narray[0]
         }
-        else if (text[i] === "V") {
+        else if (text[i] === "{") {
             const narray = text[i].split("");
             narray[0] = " ";
             decrypted += narray[0]
