@@ -485,7 +485,7 @@ nav ul a span{
 @media only screen and (max-width: 600px){
     .container{
         padding: 1.4em 2em;
-        margin=bottom: 6.3em;
+        margin-bottom: 6.3em;
     }
     #oj{
         width: 80vw;
@@ -506,6 +506,7 @@ nav ul a span{
 }
 
 footer{
+    margin-top: 2em;
     padding: 2em 6em;
     text-align: center;
     color: #adadad;
